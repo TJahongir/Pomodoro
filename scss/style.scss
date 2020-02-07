@@ -9,6 +9,13 @@ $primaryColor: #cf3a24;
   color: #fff;
 }
 
+::selection {
+  background: #c0c0c0; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #cecece; /* Gecko Browsers */
+}
+
 body {
   height: 100vh;
   width: 100vw;
