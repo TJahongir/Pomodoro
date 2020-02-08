@@ -1,6 +1,7 @@
 const startBtn = document.querySelector('#start');
 const pauseBtn = document.querySelector('#pause');
 const timeDOM = document.querySelector('.counter-time');
+let sound = new Audio('../sounds/sound1.mp3');
 
 let modes = [
   {
@@ -43,6 +44,7 @@ const startTimer = mode => {
     timeDOM.textContent = formatTime(timeLeft);
 
     if (timeLeft == 0) {
+      sound.play();
       clearInterval(timerInterval);
     }
   }, 1000);
@@ -51,3 +53,5 @@ const startTimer = mode => {
 startBtn.addEventListener('click', () => {
   startTimer(defaultMode);
 });
+
+pauseBtn.addEventListener('click', () => {});
