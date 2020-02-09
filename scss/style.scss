@@ -9,6 +9,14 @@ $primaryColor: #cf3a24;
   color: #fff;
 }
 
+#stop {
+  display: none;
+}
+
+#pause {
+  cursor: no-drop;
+}
+
 ::selection {
   background: #c0c0c0; /* WebKit/Blink Browsers */
 }
